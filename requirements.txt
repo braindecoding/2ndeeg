@@ -1,0 +1,48 @@
+# Cross-Subject Validation for Handwritten Character EEG Dataset
+# Requirements file for reproducible environment setup
+# 
+# CRITICAL: Use scikit-learn 1.3.2 to avoid numpy.ndarray conversion errors
+# DO NOT upgrade to scikit-learn 1.6.0 or newer without testing compatibility
+#
+# Installation: pip install -r requirements.txt
+# Tested on: Python 3.12.7, macOS (should work on Linux/Windows)
+
+# Core scientific computing
+numpy==1.26.2
+
+# Machine learning framework - CRITICAL VERSION
+scikit-learn==1.3.2
+
+# Data manipulation and analysis
+pandas==2.2.3
+
+# Scientific computing and signal processing
+scipy==1.12.0
+
+# Visualization
+matplotlib==3.8.2
+
+# Parallel processing (dependency of scikit-learn)
+joblib==1.4.2
+
+# Thread pool control (dependency of scikit-learn)
+threadpoolctl==3.5.0
+
+# Optional: Enhanced plotting (uncomment if needed)
+# seaborn==0.13.0
+
+# Optional: Progress bars (uncomment if needed)
+# tqdm==4.66.1
+
+# Optional: Jupyter notebook support (uncomment if needed)
+# jupyter==1.0.0
+# ipykernel==6.26.0
+
+# Optional: Advanced signal processing (uncomment if needed)
+# mne==1.5.1
+
+# Development and testing (uncomment for development)
+# pytest==7.4.3
+# pytest-cov==4.1.0
+# black==23.11.0
+# flake8==6.1.0

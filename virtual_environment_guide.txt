@@ -1,0 +1,20 @@
+
+# Virtual Environment Setup Guide
+
+## Option 1: Using venv (recommended)
+python -m venv eeg_analysis_env
+source eeg_analysis_env/bin/activate  # On Windows: eeg_analysis_env\Scripts\activate
+pip install -r requirements.txt
+
+## Option 2: Using conda
+conda create -n eeg_analysis python=3.12
+conda activate eeg_analysis
+pip install -r requirements.txt
+
+## Deactivate environment when done
+deactivate  # for venv
+conda deactivate  # for conda
+
+## Reactivate environment later
+source eeg_analysis_env/bin/activate  # venv
+conda activate eeg_analysis  # conda

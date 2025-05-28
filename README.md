@@ -1,2 +1,2 @@
-# 2ndeeg
-multi subject comparative eeg
+# eeg2
+Dataset comparasi 2 eeg

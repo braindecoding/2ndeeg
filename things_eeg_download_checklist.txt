@@ -1,0 +1,46 @@
+
+THINGS-EEG Dataset Download Checklist
+====================================
+
+□ Step 1: Prepare
+  □ Check available disk space (need ~20GB)
+  □ Ensure stable internet connection
+  □ Create datasets/things_eeg/ directory
+
+□ Step 2: Download from OSF
+  □ Go to: https://osf.io/crn2h/
+  □ Download sub-01.zip (~5GB)
+  □ Download sub-02.zip (~5GB) 
+  □ Download sub-03.zip (~5GB)
+  □ Optional: Download more subjects
+
+□ Step 3: Extract Files
+  □ Extract sub-01.zip to datasets/things_eeg/sub-01/
+  □ Extract sub-02.zip to datasets/things_eeg/sub-02/
+  □ Extract sub-03.zip to datasets/things_eeg/sub-03/
+  □ Verify folder structure
+
+□ Step 4: Validate
+  □ Run: python3 validate_things_eeg.py
+  □ Should show 3 subjects found
+  □ All EEG files present
+
+□ Step 5: Run Analysis
+  □ Run: python3 things_eeg_cross_validation.py
+  □ Check results and visualizations
+
+Expected File Structure:
+datasets/things_eeg/
+├── sub-01/
+│   ├── eeg/
+│   │   └── sub-01_task-rsvp_eeg.set
+│   └── beh/
+│       └── sub-01_task-rsvp_beh.tsv
+├── sub-02/
+└── sub-03/
+
+Troubleshooting:
+- If download is slow: Try downloading one subject at a time
+- If extraction fails: Check available disk space
+- If validation fails: Check file paths and names
+- If analysis fails: Ensure all dependencies installed
